@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?php echo base_url();?>asset/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo base_url();?>asset/jquery.dataTables.min.css">
+    <link href="<?=base_url('asset/bootstrap-sweetalert/sweetalert.css')?>" rel="stylesheet" type="text/css" />
     <title>Point Of Sale</title>
   </head>
     <style type="text/css">
@@ -67,14 +68,18 @@
 
     <!-- Akhir Navbar -->
     <section class="container" id="isi">
+     <input type="hidden" id="weburi" name="weburi" value="<?php echo base_url() ?>">
       <?php echo $contents;  ?>
     </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="<?php echo base_url()?>asset/jquery-3.3.1.slim.min.js"></script>
+    <script src="<?php echo base_url()?>asset/jquery-3.3.1.js"></script>
+    <!-- <script src="<?php echo base_url()?>asset/jquery-3.3.1.slim.min.js"></script> -->
+    <script src="<?=base_url('asset/bootstrap-sweetalert/sweetalert.js')?>" type="text/javascript"></script>
     <script src="<?php echo base_url()?>asset/popper.min.js"></script>
     <script src="<?php echo base_url()?>asset/bootstrap.min.js"></script>
     <script src="<?php echo base_url()?>asset/jquery.dataTables.min.js"></script>
+    <script src="<?php echo base_url()?>asset/web/kategori.js"></script>
   </body>
   <script type="text/javascript">
     $(document).ready(function() {
@@ -85,5 +90,9 @@
         "order": [[ 3, "desc" ]]
       } );
     } );
+
   </script>
+  <script type="text/javascript">
+
+</script>
 </html>
